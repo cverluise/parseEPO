@@ -1,0 +1,27 @@
+# confidential
+npl-parsing-081764a9a6b5.json
+
+# dev
+dev.py
+zip_bulk.sh
+
+# data
+data.nosync/
+
+# docs
+docs/
+mkdocs.yml
+
+# System files
+**/.DS_Store
+.idea/*
+.mypy_cache/*
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+
+# Distribution / packaging
+**/eggs/
+**/.eggs/
+*.egg-info/
+*.egg

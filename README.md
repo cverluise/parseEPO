@@ -3,7 +3,7 @@
 
 # READ ME
 
-# EPO full-text for humans
+*EPO full-text for humans*
 
 Explore the **EP full-text data for text analytics (CC4)** in a minute.
 
@@ -14,9 +14,9 @@ This is an open-source project ([MIT-2](./LICENSE.md)).
 
 
 > **EP full-text data for text analytics**
-
+>
 >The European Patent Office (EPO) has released a bulk data collection. It contains the full text of all
 >patent applications/grants since it was set up in 1978.
-
+>
 >- EPO official data [documentation][docs-ep]
 >- EPO offical [data][gcs-ep] on Google Cloud Storage

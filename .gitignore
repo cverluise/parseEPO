@@ -8,6 +8,8 @@ zip_bulk.sh
 # data
 data.nosync/
 
+# site
+site/
 
 # System files
 **/.DS_Store

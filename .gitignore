@@ -8,9 +8,6 @@ zip_bulk.sh
 # data
 data.nosync/
 
-# docs
-docs/
-mkdocs.yml
 
 # System files
 **/.DS_Store

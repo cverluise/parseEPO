@@ -1,0 +1,62 @@
+# Project information
+site_name: 'Parse EPO'
+site_description: 'EPO full-text for humans'
+site_author: 'Cyril Verluise'
+#site_url: 'https://squidfunk.github.io/mkdocs-material/'
+
+# Repository
+repo_name: 'cverluise/parseEPO'
+repo_url: 'https://github.com/cverluise/parseEPO'
+
+# Copyright
+copyright: 'Copyright; 2020 Cyril Verluise'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'green'
+    accent: 'green'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/cverluise'
+    - type: 'twitter'
+      link: 'https://twitter.com/cyrilverluise'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/in/cyril-verluise-80184347/'
+
+# Google Analytics
+#google_analytics:
+#  - 'UA-XXXXXXXX-X'
+#  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+
+# Page tree
+
+nav:
+  - About: index.md
+#  - Quick start:
+  - Developers:
+    - Set-up: set-up.md
+    - Extract: extract.md
+    - Transform: transform.md
+    - Load: load.md
+  - License: license.md

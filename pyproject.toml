@@ -1,28 +1,26 @@
 [tool.poetry]
 name = "parseEPO"
 version = "0.1.0"
-description = ""
+description = "EPO full-text for humans"
 authors = ["Cyril Verluise <cyril.verluise@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
 pandas = "^0.25.3"
 html2text = "^2019.9"
-bs4 = "^0.0.1"
 smart_open = "^1.9"
 wasabi = "^0.6.0"
-unidecode = "^1.1"
 click = "^7.0"
 typer = "^0.0.8"
 tqdm = "^4.41"
-mkdocs-material = "^4.6.0"
 google-cloud-bigquery = "^1.23.1"
 
 [tool.poetry.dev-dependencies]
+bs4 = "^0.0.1"
 pytest = "^3.0"
-chardet = "^3.0"
 pre-commit = "^1.21.0"
 mkdocs = "^1.0.4"
+mkdocs-material = "^4.6.0"
 pygments = "^2.5.2"
 pymdown-extensions = "^6.2.1"
 bigquery-schema-generator = "^0.5.1"

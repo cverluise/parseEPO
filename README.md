@@ -1,6 +1,6 @@
 [docs-ep]:https://www.epo.org/searching-for-patents/data/bulk-data-sets/text-analytics.html#tab-2
 [gcs-ep]:https://console.cloud.google.com/storage/browser/epo-patentinformation
-
+[doc-dev]:https://cverluise.github.io/parseEPO/set-up/
 # READ ME
 
 *EPO full-text for humans*
@@ -8,7 +8,7 @@
 Explore the **EP full-text data for text analytics (CC4)** in a minute.
 
 - 🚧 WiP 🚧: We have prepared the data for you. You can start exploring the full database using **BigQuery** right now. Efficient full-scale analysis is literally one click away from you.
-- [Developers](set-up.md): This project is based on a standard **ETL** pipeline. Advanced users can build on it to design their own implementation and/or set options that are most convenient to them.
+- [Developers][doc-dev]: This project is based on a standard **ETL** pipeline. Advanced users can build on it to design their own implementation and/or set options that are most convenient to them.
 
 This is an open-source project ([MIT-2](./LICENSE.md)).
 

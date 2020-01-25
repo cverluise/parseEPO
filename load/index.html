@@ -422,21 +422,23 @@
 <p>BigQuery offers a convenient way to query and analyze large amounts of data.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>In case you are new to BigQuery, you might want to:
-- Take the Google BigQuery <a href="https://cloud.google.com/bigquery/docs/quickstarts/quickstart-web-ui">Quickstart</a>
-- Learn more on <a href="https://cloud.google.com/bigquery/docs/reference/bq-cli-reference#bq_load"><code>bq load</code></a></p>
+<p>In case you are new to BigQuery, you might want to:</p>
+<ul>
+<li>Take the Google BigQuery <a href="https://cloud.google.com/bigquery/docs/quickstarts/quickstart-web-ui">Quickstart</a></li>
+<li>Learn more on <a href="https://cloud.google.com/bigquery/docs/reference/bq-cli-reference#bq_load"><code>bq load</code></a></li>
+</ul>
 </div>
 <h3 id="data-schema">Data schema<a class="headerlink" href="#data-schema" title="Permanent link">&para;</a></h3>
 <p>To load a table on BigQuery, you need to specify its schema. <code>CreateSchema.py</code> (python CLI) generates this schema for you.
 Take care to set the <code>--prepare-names</code> / <code>--no-prepare-names</code> option to the value set when you serialized the data.</p>
-<div class="codehilite"><pre><span></span>python  bin/CreateSchema.py <span class="se">\</span>
+<div class="codehilite"><pre><span></span>python  bin/create-schema.py <span class="se">\</span>
         --prepare-names <span class="se">\</span>
         path/to/schema.json  <span class="c1"># destination file</span>
 </pre></div>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><code>CreateSchema.py</code> currently misses rare variables (e.g. <code>AMEND</code>). If you want to generate the full schema, you can still use the <a href="https://pypi.org/project/bigquery-schema-generator/"><code>generate-schema</code></a> CLI.
+<p><code>create-schema.py</code> currently misses rare variables (e.g. <code>AMEND</code>). If you want to generate the full schema, you can still use the <a href="https://pypi.org/project/bigquery-schema-generator/"><code>generate-schema</code></a> CLI.
 E.g. <code>generate-schema &lt; path/to/EP0600000.jsonl &gt; path/to/schema.json</code>.</p>
 </div>
 <h3 id="load-table">Load table<a class="headerlink" href="#load-table" title="Permanent link">&para;</a></h3>

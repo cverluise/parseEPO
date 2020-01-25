@@ -103,7 +103,6 @@ def serialize_patent_df(patent_df: pd.DataFrame):
     """
     publication_number = patent_df["publication_number"].values[0]
     publication_date = patent_df["publication_date"].values[0]
-    publication_countries = patent_df["language"].unique().tolist()
 
     out = (
         patent_df.drop(["publication_number", "publication_date"], axis=1)
@@ -115,7 +114,6 @@ def serialize_patent_df(patent_df: pd.DataFrame):
     unnest_attr(out, publication_number)
     out.update({"publication_number": publication_number})
     out.update({"publication_date": publication_date})
-    out.update({"country_code": publication_countries})
     return out
 
 

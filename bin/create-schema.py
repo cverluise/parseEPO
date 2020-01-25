@@ -34,12 +34,6 @@ def main(
             description="Publication date of the EP patent",
         ),
         SchemaField(
-            "country_code",
-            "STRING",
-            "REPEATED",
-            description="Country code of granting offices",
-        ),
-        SchemaField(
             prepare_name("TITLE", prepare_names),
             "RECORD",
             "NULLABLE",

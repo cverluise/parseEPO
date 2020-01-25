@@ -55,7 +55,7 @@ We overcome these drawbacks by **serializing** the data. Each patent is represen
 `SerializeEPO.py` (python CLI) turns the EP **tsv** files into **json newline delimited** files.
 
 ``` bash
-python  bin/SerializeEPO.py \
+python  bin/serialize-epo.py \
         --max-workers 2 \
         --verbose \
         --prepare-names \

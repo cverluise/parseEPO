@@ -31,7 +31,11 @@ python  bin/create-schema.py \
 ### Load table
 
 !!! tip
-    For the sake of efficiency, load the serialized files to a Google Storage bucket beforehand (`gsutil -m cp -r path/to/folder/ gs://your-bucket/`)
+    For the sake of efficiency, load the serialized files to a Google Storage bucket beforehand
+
+    ```bash
+    gsutil -m cp -r path/to/folder/ gs://your-bucket/
+    ```
 
 ```bash
 bq load --source_format=NEWLINE_DELIMITED_JSON \
@@ -39,7 +43,6 @@ bq load --source_format=NEWLINE_DELIMITED_JSON \
         --replace \
         --max_bad_records=10 \
         project:dataset.table \
-        path/to/EP*.jsonl \  # path/to/EP*.jsonl.gz if compressed beforehand
-                             # gs://your-bucket/EP*.jsonl(.gz) recommended
+        path/to/EP*.jsonl \ # gs://your-bucket/EP*.jsonl recommended
         path/to/schema.json
 ```

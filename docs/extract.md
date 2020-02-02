@@ -20,13 +20,11 @@ To download the EPO bulk dataset using the console:
 * [x] Download the dataset to `your/destination/folder`
 
 ``` bash hl_lines="1"
-gsutil  -u <your-billing-project> \
+gsutil  -u <your-billing-project> \ # specify the billing project
         -m cp -r gs://epo-patentinformation/ \
         <your/destination/folder>
 ```
 
 !!! tip
-    - The EPO dataset is made of **uncompressed** `.txt` files. Hence, you can divide its size 5-folds by compressing `.txt` files
-    in `.gz` files. Execute `gzip your/destination/folder/EP*.txt`. Note: the rest of the pipeline supports `.gz` files natively.
-    - If you are a frequent user of the Google Cloud Platform, you can set `your/destination/folder` to a Google Storage bucket.
+    If you are a frequent user of the Google Cloud Platform, you can set `your/destination/folder` to a Google Storage bucket uri (e.g. `gs://...`).
     The rest of the pipeline can be executed from a **compute instance** with the **bucket mounted**, see [`gcsfuse`][doc-gcsfuse] instructions.

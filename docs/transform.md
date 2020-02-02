@@ -47,7 +47,7 @@ We overcome these drawbacks by **serializing** the data. Each patent is represen
 
 !!! note
     In this example, variable names have been slightly modified (e.g. `ABSTR` becomes `abstract`). This is meant to align
-    variable names with BigQuery patents data standards. You can avoid this behavior by setting `--no-prepare-names` (see **tip:SerializeEPO.py** below.)
+    variable names with BigQuery patents data standards. You can avoid this behavior by setting `--no-prepare-names`, see **tip:SerializeEPO.py** below.
 
 
 ## In practice
@@ -59,10 +59,10 @@ python  bin/serialize-epo.py \
         --max-workers 2 \
         --verbose \
         --prepare-names \
-        "your/folder/EP*.txt"  # "your/folder/EP*.txt.gz" if compressed beforehand
+        "your/folder/EP*.txt"
 ```
 
-!!! tip "SerializeEPO.py"
+??? tip "SerializeEPO.py"
     Each file is serialized and the output is saved in `your/folder/` as
     `<epo-file-name>.jsonl( .<suffix>)`. Nb: if the original file was compressed (`.gz`), the serialized file will be compressed as well.
 

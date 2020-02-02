@@ -10,10 +10,6 @@ from parseepo.utils import prepare_name
 msg = Printer()
 
 
-#  generate-schema < io/sampleEP0600000.jsonl > schema/schemaEP_prepare-names.json
-#  bq.Client().schema_from_json(file_or_path="schema/schemaEP_prepare-names.json")
-
-
 def main(
     dest: str,
     prepare_names: bool = typer.Option(
@@ -32,6 +28,18 @@ def main(
             "DATE",
             "NULLABLE",
             description="Publication date of the EP patent",
+        ),
+        SchemaField(
+            prepare_name("PDFEP", prepare_names),
+            "RECORD",
+            "NULLABLE",
+            description="Url link to the pdf of the " "EP patent",
+            fields=(
+                SchemaField(
+                    "language", "STRING", "NULLABLE", description="Language of the pdf"
+                ),
+                SchemaField("text", "STRING", "NULLABLE", description="Url"),
+            ),
         ),
         SchemaField(
             prepare_name("TITLE", prepare_names),
@@ -62,20 +70,6 @@ def main(
             ),
         ),
         SchemaField(
-            prepare_name("CLAIM", prepare_names),
-            "RECORD",
-            "NULLABLE",
-            description="Claims of patent",
-            fields=(
-                SchemaField(
-                    "language", "STRING", "REPEATED", description="Claims language"
-                ),
-                SchemaField(
-                    "text", "STRING", "REPEATED", description="Localized claims"
-                ),
-            ),
-        ),
-        SchemaField(
             prepare_name("DESCR", prepare_names),
             "RECORD",
             "NULLABLE",
@@ -93,15 +87,31 @@ def main(
             ),
         ),
         SchemaField(
-            prepare_name("PDFEP", prepare_names),
+            prepare_name("CLAIM", prepare_names),
             "RECORD",
             "NULLABLE",
-            description="Url link to the pdf of the " "EP patent",
+            description="Claims of patent",
             fields=(
                 SchemaField(
-                    "language", "STRING", "NULLABLE", description="Language of the pdf"
+                    "language", "STRING", "REPEATED", description="Claims language"
                 ),
-                SchemaField("text", "STRING", "NULLABLE", description="Url"),
+                SchemaField(
+                    "text", "STRING", "REPEATED", description="Localized claims"
+                ),
+            ),
+        ),
+        SchemaField(
+            prepare_name("AMEND", prepare_names),
+            "RECORD",
+            "NULLABLE",
+            description="Amendments",
+            fields=(
+                SchemaField(
+                    "language", "STRING", "REPEATED", description="Amendments language"
+                ),
+                SchemaField(
+                    "text", "STRING", "REPEATED", description="Localized amendments"
+                ),
             ),
         ),
     ]

@@ -1,8 +1,9 @@
 # confidential
-npl-parsing-081764a9a6b5.json
+eda/npl-parsing-081764a9a6b5.json
 
 # dev
 dev.py
+eda/
 zip_bulk.sh
 
 # data
@@ -15,6 +16,7 @@ site/
 **/.DS_Store
 .idea/*
 .mypy_cache/*
+**/.ipynb_checkpoints/
 
 # Byte-compiled / optimized / DLL files
 **/__pycache__/

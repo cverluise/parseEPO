@@ -47,7 +47,8 @@ markdown_extensions:
       permalink: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+  - pymdownx.details:
 
 # Page tree
 
@@ -59,4 +60,5 @@ nav:
     - Extract: extract.md
     - Transform: transform.md
     - Load: load.md
+    - Before starting: before.md
   - License: license.md

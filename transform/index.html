@@ -238,18 +238,30 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../quickstart/" title="Quick start" class="md-nav__link">
+      Quick start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       Developers
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         Developers
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -351,6 +363,18 @@
   <li class="md-nav__item">
     <a href="../load/" title="Load" class="md-nav__link">
       Load
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../before/" title="Before starting" class="md-nav__link">
+      Before starting
     </a>
   </li>
 
@@ -474,20 +498,18 @@ EP  0600083 A1  1994-06-08  en  PDFEP   https://data.epo.org/publication-server/
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In this example, variable names have been slightly modified (e.g. <code>ABSTR</code> becomes <code>abstract</code>). This is meant to align
-variable names with BigQuery patents data standards. You can avoid this behavior by setting <code>--no-prepare-names</code> (see <strong>tip:SerializeEPO.py</strong> below.)</p>
+variable names with BigQuery patents data standards. You can avoid this behavior by setting <code>--no-prepare-names</code>, see <strong>tip:SerializeEPO.py</strong> below.</p>
 </div>
 <h2 id="in-practice">In practice<a class="headerlink" href="#in-practice" title="Permanent link">&para;</a></h2>
 <p><code>SerializeEPO.py</code> (python CLI) turns the EP <strong>tsv</strong> files into <strong>json newline delimited</strong> files.</p>
 <div class="codehilite"><pre><span></span>python  bin/serialize-epo.py <span class="se">\</span>
-        --max-workers <span class="m">2</span> <span class="se">\</span>
-        --verbose <span class="se">\</span>
-        --prepare-names <span class="se">\</span>
-        <span class="s2">&quot;your/folder/EP*.txt&quot;</span>  <span class="c1"># &quot;your/folder/EP*.txt.gz&quot; if compressed beforehand</span>
+--max-workers <span class="m">2</span> <span class="se">\</span>
+--verbose <span class="se">\</span>
+--prepare-names <span class="se">\</span>
+<span class="s2">&quot;your/folder/EP*.txt&quot;</span>
 </pre></div>
 
-<div class="admonition tip">
-<p class="admonition-title">SerializeEPO.py</p>
-<p>Each file is serialized and the output is saved in <code>your/folder/</code> as
+<details class="tip"><summary>SerializeEPO.py</summary><p>Each file is serialized and the output is saved in <code>your/folder/</code> as
 <code>&lt;epo-file-name&gt;.jsonl( .&lt;suffix&gt;)</code>. Nb: if the original file was compressed (<code>.gz</code>), the serialized file will be compressed as well.</p>
 <ul>
 <li><code>--max-workers</code>: Maximum number of threads allowed</li>
@@ -496,7 +518,7 @@ variable names with BigQuery patents data standards. You can avoid this behavior
 <li><code>--handle-html</code> / <code>--no-handle-html</code>: Handle html</li>
 <li><code>--help</code>: Show this message and exit.</li>
 </ul>
-</div>
+</details>
                 
                   
                 

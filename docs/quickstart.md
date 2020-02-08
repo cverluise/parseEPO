@@ -58,7 +58,7 @@ In this section we focus on the availability of the full-text patent **descripti
 #### USPTO and EPO full-text patent description data coverage
 
 !!! info "USPTO full text data"
-    The USPTO full text data are available from the [USPTO bulk data][https://bulkdata.uspto.gov/]. US full-text patent data can be easily parsed thanks to [iamlemec/patents][iamlemec/patents]. They are also available in a well-structured format as part of the BigQuery [patents-public-dataset][patents-public-data]
+    The USPTO full text data are available from the [USPTO bulk data][https://bulkdata.uspto.gov/]. US full-text patent data can be easily parsed thanks to [iamlemec/patents][iamlemec/patents]. They are also available in a well-structured format as part of the BigQuery [patents-public-dataset][patents-public-data].
 
 USPTO | EPO
 :-------------------------:|:-------------------------:

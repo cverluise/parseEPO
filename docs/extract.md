@@ -21,8 +21,8 @@ To download the EPO bulk dataset using the console:
 
 ``` bash hl_lines="1"
 gsutil  -u <your-billing-project> \ # specify the billing project
-        -m cp -r gs://epo-patentinformation/ \
-        <your/destination/folder>
+-m cp -r gs://epo-patentinformation/ \
+<your/destination/folder>
 ```
 
 !!! tip

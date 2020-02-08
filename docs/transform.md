@@ -56,10 +56,10 @@ We overcome these drawbacks by **serializing** the data. Each patent is represen
 
 ``` bash
 python  bin/serialize-epo.py \
-        --max-workers 2 \
-        --verbose \
-        --prepare-names \
-        "your/folder/EP*.txt"
+--max-workers 2 \
+--verbose \
+--prepare-names \
+"your/folder/EP*.txt"
 ```
 
 ??? tip "SerializeEPO.py"

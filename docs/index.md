@@ -6,8 +6,8 @@
 
 Explore the **EP full-text data for text analytics (CC4)** in a minute.
 
-- 🚧 WiP 🚧: We have prepared the data for you. You can start exploring the full database using **BigQuery** right now. Efficient full-scale analysis is literally one click away from you.
-- [Developers](set-up.md): This project is based on a standard **ETL** pipeline. Advanced users can build on it to design their own implementation and/or set options that are most convenient to them.
+- [Quick Start](quickstart.md): overview of the dataset
+- [Developers](set-up.md): standard **ETL** pipeline to fit the dataset into an easy-to-use/query format
 
 This is an open-source project ([MIT-2](./license.md)).
 

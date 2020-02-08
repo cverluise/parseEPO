@@ -54,7 +54,7 @@ markdown_extensions:
 
 nav:
   - About: index.md
-#  - Quick start:
+  - Quick start: quickstart.md
   - Developers:
     - Set-up: set-up.md
     - Extract: extract.md

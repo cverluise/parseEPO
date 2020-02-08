@@ -3,11 +3,11 @@ eda/npl-parsing-081764a9a6b5.json
 
 # dev
 dev.py
-eda/
 zip_bulk.sh
 
 # data
 data.nosync/
+eda/plots/*
 
 # site
 site/

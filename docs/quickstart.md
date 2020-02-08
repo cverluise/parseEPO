@@ -1,8 +1,11 @@
 [uspto-bulk]:https://bulkdata.uspto.gov/
 [iamlemec/patents]:https://github.com/iamlemec/patents
 [patents-public-data]:https://console.cloud.google.com/bigquery?project=npl-parsing&p=patents-public-data&d=patents&t=publications&page=table
+[eda]:https://github.com/cverluise/parseEPO/
 
 # Quick Start
+
+Figures and analyses reported below can be reproduced using the material in the [exploratory data analysis][eda] folder.
 
 ## EP data (1978-2019)
 

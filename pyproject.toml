@@ -15,7 +15,7 @@ typer = "^0.0.8"
 tqdm = "^4.41"
 google-cloud-bigquery = "^1.23.1"
 jsonschema = "^3.2.0"
-notebook = "^6.0.3"
+notebook = "^6.4.12"
 
 [tool.poetry.dev-dependencies]
 bs4 = "^0.0.1"
